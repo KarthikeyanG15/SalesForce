@@ -32,6 +32,7 @@ public class TC01_AddName {
 		WebElement opp = driver.findElementByXPath("//span[text()='Opportunities']");
 		JavascriptExecutor js =(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()", opp);
+		
 		String inpText = "Karthikeyan G";
 		driver.findElementByXPath("//div[text()='New']").click();
 		driver.findElementByXPath("(//input[@class=' input'])[2]").sendKeys(inpText);
