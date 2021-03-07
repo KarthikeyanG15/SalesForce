@@ -43,8 +43,8 @@ public class TC01_AddName {
 		String scrtext = driver.findElementByXPath("(//lightning-formatted-text)[1]").getText();
 		boolean verify = scrtext.equalsIgnoreCase(inpText);
 		if (verify==true) {
-			System.out.println("Verified and looks good"+scrtext);	
-		} else System.out.println("doesn't looks good"+scrtext);	
+			System.out.println("Verified and looks good: "+scrtext);	
+		} else System.out.println("doesn't looks good: "+scrtext);	
 
 		}
 }
