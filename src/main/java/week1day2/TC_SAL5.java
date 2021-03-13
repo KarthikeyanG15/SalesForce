@@ -11,7 +11,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TC_SAL5 {
+public class TC_SAL5 extends Login{
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
@@ -29,6 +29,7 @@ public class TC_SAL5 {
 		driver.findElementById("username").sendKeys("mercury.bootcamp@testleaf.com");
 		driver.findElementById("password").sendKeys("Bootcamp$123");
 		driver.findElementById("Login").click();
+		
 		//Click on the toggle menu button from the left corner
 		driver.findElementByXPath("//div[@class='slds-icon-waffle']").click();
 		//Click View All and click Sales from App Launcher
