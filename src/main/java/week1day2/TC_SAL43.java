@@ -53,6 +53,7 @@ public class TC_SAL43 {
 		driver.findElementByXPath("//a[@title='Low']").click();
 		driver.findElementByXPath("//span[text() ='Save']").click();
 		
+		
 	}
 
 }
